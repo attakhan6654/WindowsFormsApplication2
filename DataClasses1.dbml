@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="administrator" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=AttaKhan009;Initial Catalog=administrator;Integrated Security=True" SettingsObjectName="WindowsFormsApplication2.Properties.Settings" SettingsPropertyName="administratorConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.CashInHand" Member="CashInHands">
+    <Type Name="CashInHand">
+      <Column Name="CIHID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TotalsAmount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LabourPayment" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PerdayExpence" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Contract" Member="Contracts">
+    <Type Name="Contract">
+      <Column Name="ContractorId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ContractorName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SideId" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DealAmount" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.InnCash" Member="InnCashes">
+    <Type Name="InnCash">
+      <Column Name="CIID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CashTotals" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CashComes" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CashNet" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.OutCash" Member="OutCashes">
+    <Type Name="OutCash">
+      <Column Name="COID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CashTotals" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CashGos" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CashNets" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.person" Member="persons">
+    <Type Name="person">
+      <Column Name="personadmin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="passwordadmin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="personemail" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="personphone" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TabMyInfo" Member="TabMyInfos">
+    <Type Name="TabMyInfo">
+      <Column Name="IDInfo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NameInfo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AddressInfo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AgeInfo" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TabMyInv" Member="TabMyInvs">
+    <Type Name="TabMyInv">
+      <Column Name="IDInv" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NameInv" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CompanyInv" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PhoneInv" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tables" Member="Tables">
+    <Type Name="Table">
+      <Column Name="PictureId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UserPic" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TabMyUser" Member="TabMyUsers">
+    <Type Name="TabMyUser">
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NameUser" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PasswordUser" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UserPic" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TabMyUse" Member="TabMyUses">
+    <Type Name="TabMyUse">
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FNameUse" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LNameUse" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NameUse" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PasswordUse" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PhoneUse" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CnicUse" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TypeUse" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EEmployee" Member="EEmployees">
+    <Type Name="EEmployee">
+      <Column Name="EmpIds" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EmpFNames" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="EmpLNames" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="EmpUserNames" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="EmpAdds" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="EmpPhones" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="EmpCnics" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="EmpEdus" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="EmpExps" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="EmpDobs" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="EmpGens" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="EmpEmerNos" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="EmpBloodGroups" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="EmpMartialStatuss" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="EmpSalary" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ManagementEEmployee" Member="ManagementEEmployees">
+    <Type Name="ManagementEEmployee">
+      <Column Name="EmpId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EmpFName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EmpLName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EmpUserName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EmpAdd" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EmpWorkingPlace" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EmpEducation" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EmpPaidSalary" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="EmpCnic" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Labour" Member="Labours">
+    <Type Name="Labour">
+      <Column Name="LabourID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LabourCNIC" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LabourName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LabourAddress" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LabourPhonen" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LabourSalary" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ManagementLLabour" Member="ManagementLLabours">
+    <Type Name="ManagementLLabour">
+      <Column Name="LabourID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LabourCNIC" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LabourName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LabourAddress" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LabourPhonen" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LabourPaidSalary" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TabMyCus" Member="TabMyCus">
+    <Type Name="TabMyCus">
+      <Column Name="IDCus" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CnicCus" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NameCus" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AddressCus" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PhoneCus" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
