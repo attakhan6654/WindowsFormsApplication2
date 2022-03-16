@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F09DF6E3-FE61-4B13-BFD3-617E9B172723}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication3</RootNamespace>
+    <AssemblyName>WindowsFormsApplication3</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Atta Khan\Downloads\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://localhost/WindowsFormsApplication3/</UpdateUrl>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.v13.1, Version=13.1.20131.1001, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Product.Designer.cs">
+      <DependentUpon>Add Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Branch Management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Branch Management.Designer.cs">
+      <DependentUpon>Branch Management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Expence Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expence Report.Designer.cs">
+      <DependentUpon>Expence Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Orderr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Orderr.Designer.cs">
+      <DependentUpon>Manage Orderr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="New Employee.Designer.cs">
+      <DependentUpon>New Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Pannell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Pannell.Designer.cs">
+      <DependentUpon>Admin Pannell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Profilee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Profilee.Designer.cs">
+      <DependentUpon>Admin Profilee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashIneer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashIneer.Designer.cs">
+      <DependentUpon>CashIneer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashOutter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashOutter.Designer.cs">
+      <DependentUpon>CashOutter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Employee Management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Management.Designer.cs">
+      <DependentUpon>Employee Management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Product.Designer.cs">
+      <DependentUpon>Manage Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Vendor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Vendor.Designer.cs">
+      <DependentUpon>Manage Vendor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="New Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Indexx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Indexx.Designer.cs">
+      <DependentUpon>Indexx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewCustomer.Designer.cs">
+      <DependentUpon>NewCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewUserr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewUserr.Designer.cs">
+      <DependentUpon>NewUserr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewVender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewVender.Designer.cs">
+      <DependentUpon>NewVender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Project Management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project Management.Designer.cs">
+      <DependentUpon>Project Management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="projectDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>projectDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Purchase Item.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Item.Designer.cs">
+      <DependentUpon>Purchase Item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recordd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recordd.Designer.cs">
+      <DependentUpon>Recordd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RRecover.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RRecover.Designer.cs">
+      <DependentUpon>RRecover.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add Product.resx">
+      <DependentUpon>Add Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Pannell.resx">
+      <DependentUpon>Admin Pannell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Profilee.resx">
+      <DependentUpon>Admin Profilee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Branch Management.resx">
+      <DependentUpon>Branch Management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashIneer.resx">
+      <DependentUpon>CashIneer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashOutter.resx">
+      <DependentUpon>CashOutter.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Employee Management.resx">
+      <DependentUpon>Employee Management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expence Report.resx">
+      <DependentUpon>Expence Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Product.resx">
+      <DependentUpon>Manage Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Vendor.resx">
+      <DependentUpon>Manage Vendor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Indexx.resx">
+      <DependentUpon>Indexx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Orderr.resx">
+      <DependentUpon>Manage Orderr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewCustomer.resx">
+      <DependentUpon>NewCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New Employee.resx">
+      <DependentUpon>New Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewUserr.resx">
+      <DependentUpon>NewUserr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewVender.resx">
+      <DependentUpon>NewVender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project Management.resx">
+      <DependentUpon>Project Management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Purchase Item.resx">
+      <DependentUpon>Purchase Item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recordd.resx">
+      <DependentUpon>Recordd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="RRecover.resx">
+      <DependentUpon>RRecover.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="projectDataSet.xsc">
+      <DependentUpon>projectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="projectDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>projectDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="projectDataSet.xss">
+      <DependentUpon>projectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="project.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="project_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>project.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
